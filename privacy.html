@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OmniCalc — Chính Sách Quyền Riêng Tư / Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #0f1014;
+      --card-bg: #171920;
+      --text-main: #f0f2f7;
+      --text-sub: #9ca3af;
+      --emerald: #19b875;
+      --amber: #f5a524;
+      --border: #272a34;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 24px 16px 48px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 20px;
+    }
+    h1 {
+      color: var(--emerald);
+      font-size: 24px;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+    h2 {
+      color: var(--amber);
+      font-size: 18px;
+      margin-top: 24px;
+    }
+    p, li {
+      color: var(--text-sub);
+      font-size: 14.5px;
+    }
+    strong {
+      color: var(--text-main);
+    }
+    a {
+      color: var(--emerald);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .lang-switcher {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .lang-group {
+      display: flex;
+      gap: 8px;
+    }
+    .back-btn {
+      background: transparent;
+      border: 1px solid var(--emerald);
+      color: var(--emerald);
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .back-btn:hover {
+      background: rgba(25, 184, 117, 0.12);
+      text-decoration: none;
+    }
+    .lang-btn {
+      background: #252834;
+      border: 1px solid var(--border);
+      color: var(--text-main);
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-btn.active {
+      background: var(--emerald);
+      color: #0b0c0f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang-switcher">
+      <a href="index.html" class="back-btn" onclick="if (window.history.length > 1) { window.history.back(); return false; }">← Quay lại OmniCalc / Back</a>
+      <div class="lang-group">
+        <button class="lang-btn active" onclick="showLang('vi')">Tiếng Việt</button>
+        <button class="lang-btn" onclick="showLang('en')">English</button>
+      </div>
+    </div>
+
+    <div id="content-vi">
+      <h1>Chính Sách Quyền Riêng Tư (Privacy Policy)</h1>
+      <p><em>Cập nhật lần cuối: Ngày 11 tháng 11 năm 2026</em></p>
+      <p>Ứng dụng <strong>OmniCalc</strong> ("chúng tôi", "ứng dụng") tôn trọng và cam kết bảo vệ quyền riêng tư của bạn. Chính sách này giải thích cách chúng tôi xử lý dữ liệu khi bạn sử dụng ứng dụng.</p>
+
+      <h2>1. Dữ Liệu Chúng Tôi Thu Thập & Sử Dụng</h2>
+      <ul>
+        <li><strong>Dữ liệu tính toán & tùy chọn cá nhân:</strong> Biểu thức tính toán, danh sách ngoại tệ đã ghim, lịch sử Tape, đơn vị chuyển đổi được lưu trữ <strong>cục bộ 100% trên thiết bị của bạn</strong> (qua bộ nhớ WebView / LocalStorage) và không bao giờ được tải lên máy chủ của chúng tôi.</li>
+        <li><strong>Google Play Billing:</strong> Khi bạn nâng cấp các gói PRO (Travel Pass, Monthly, Yearly, Lifetime), giao dịch được xử lý bảo mật trực tiếp bởi Google Play. Ứng dụng chỉ nhận trạng thái xác thực token giao dịch để mở khóa tính năng.</li>
+        <li><strong>Google AdMob & UMP SDK:</strong> Phiên bản Miễn phí (Free) hiển thị quảng cáo từ Google AdMob. Google có thể sử dụng Mã nhận dạng quảng cáo (Advertising ID) và thông tin thiết bị để phân phối quảng cáo và đo lường hiệu suất phù hợp với sự đồng thuận quyền riêng tư (UMP) của bạn. Người dùng bản PRO sẽ hoàn toàn không có quảng cáo.</li>
+        <li><strong>Tỷ giá thị trường ngoại tuyến & trực tuyến:</strong> Ứng dụng kết nối tới các dịch vụ API tỷ giá bên thứ ba công khai (<code>open.er-api.com</code> và CDN <code>jsdelivr.net</code> phân phối dữ liệu từ <code>@fawazahmed0/currency-api</code>) nhằm mục đích tải tỷ giá mới nhất. Địa chỉ IP của thiết bị có thể được máy chủ bên thứ ba ghi nhận tạm thời trong nhật ký mạng (HTTP server logs) theo chuẩn giao tiếp Internet thông thường; ứng dụng không gửi kèm bất kỳ dữ liệu cá nhân hay nhận dạng nào.</li>
+        <li><strong>Liên kết đối tác (Affiliate):</strong> Khi bạn nhấp vào liên kết đối tác tài trợ (nếu có trên bản Free), liên kết sẽ mở trực tiếp trên trình duyệt web mặc định ngoài của thiết bị. Chúng tôi không chia sẻ bất kỳ thông tin cá nhân nào với các đối tác này.</li>
+      </ul>
+
+      <h2>2. Quyền Kiểm Soát Dữ Liệu Của Bạn</h2>
+      <p>Bạn có thể xóa toàn bộ dữ liệu lịch sử tính toán và tùy chọn ngoại tệ bất kỳ lúc nào bằng cách sử dụng nút "Xóa lịch sử" trong app hoặc Xóa bộ nhớ đệm (Clear Data) của ứng dụng trong phần Cài đặt Android.</p>
+
+      <h2>3. Liên Hệ</h2>
+      <p>Nếu bạn có bất kỳ câu hỏi nào về chính sách quyền riêng tư này, vui lòng liên hệ nhà phát triển qua email hỗ trợ: <code>quanghuytt81@gmail.com</code>.</p>
+    </div>
+
+    <div id="content-en" style="display:none;">
+      <h1>Privacy Policy</h1>
+      <p><em>Last updated: November 11, 2026</em></p>
+      <p><strong>OmniCalc</strong> ("we", "our app") respects and is committed to protecting your privacy. This policy outlines how information is handled when you use the OmniCalc mobile and web application.</p>
+
+      <h2>1. Information We Collect & Use</h2>
+      <ul>
+        <li><strong>Calculations & Personal Preferences:</strong> Calculation expressions, pinned currencies, calculation tape history, and unit selections are stored <strong>100% locally on your device</strong> (via WebView / LocalStorage) and are never uploaded to our servers.</li>
+        <li><strong>Google Play Billing:</strong> When purchasing PRO plans (Travel Pass, Monthly, Yearly, Lifetime), transactions are processed directly and securely by Google Play Billing. Our app only receives verified purchase status tokens to grant entitlements.</li>
+        <li><strong>Google Mobile Ads (AdMob) & UMP:</strong> The Free version displays ads powered by Google AdMob. Google may use Advertising IDs and basic device diagnostic info to serve and measure ads in compliance with user consent settings (User Messaging Platform / GDPR/CCPA). PRO users enjoy a 100% Ad-Free experience.</li>
+        <li><strong>Market Exchange Rates:</strong> The app queries third-party public foreign exchange services (<code>open.er-api.com</code> and <code>jsdelivr.net</code> CDN serving <code>@fawazahmed0/currency-api</code>) solely to retrieve live currency rates. Device IP addresses may be logged standardly in third-party server network logs; no personal identifiers are attached.</li>
+        <li><strong>Contextual Partner Links (Affiliates):</strong> Tapping a sponsored offer (on Free tier) opens the link in your device's external web browser. We do not pass any personal data to third-party partners.</li>
+      </ul>
+
+      <h2>2. Your Data Controls</h2>
+      <p>You can clear all local calculations and preferences at any time directly within the app's calculation tape interface or by clearing the app data in Android Settings.</p>
+
+      <h2>3. Contact Us</h2>
+      <p>If you have any questions or feedback regarding this Privacy Policy, please reach out to us at: <code>quanghuytt81@gmail.com</code>.</p>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('content-vi').style.display = lang === 'vi' ? 'block' : 'none';
+      document.getElementById('content-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.textContent.toLowerCase().includes(lang === 'vi' ? 'việt' : 'english'));
+      });
+    }
+  </script>
+</body>
+</html>
